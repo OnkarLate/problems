@@ -8,13 +8,12 @@ void main() {
   print(twoSum(list, target));
 }
 
-List<int> twoSum(List<int> list, int sum) {
-  List<int> twoSum = [];
-  int no = list.length;
+List<int> twoSum(List<int> list, int target) {
+  int n = list.length;
 
-  for (int i = 0; i < no; i++) {
-    for (int j = i + 1; j < no; j++) {
-      if (list[i] + list[j] == sum) {
+  for (int i = 0; i < n; i++) {
+    for (int j = i + 1; j < n; j++) {
+      if (list[i] + list[j] == target) {
         return [i, j];
       }
     }
